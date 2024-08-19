@@ -1,0 +1,9 @@
+/* navbar.css */
+
+.navbar-nav .nav-link.active {
+    color: #ff5722 !important; /* Color del enlace activo */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #e64a19; /* Color al pasar el ratón */
+}
