@@ -5,7 +5,7 @@ import '../assets/css/navbar.css';
 export const Navbar = () => {
   const location = useLocation();
 
-  const getLinkStyle = (path) => {
+  const getLinkStyle = (path: string) => {
     return location.pathname === path ? { color: '#ff5722' } : {};
   };
 
