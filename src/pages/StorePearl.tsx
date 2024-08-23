@@ -4,7 +4,7 @@ import Home from './Home';
 import { Products } from './Products';
 import { ProductDetails } from '../components/ProductDetails ';
 import '../assets/css/storePearl.css'
-import { products } from '../helpers/products'; 
+import { products } from '../interface/products'; 
 
 
 
