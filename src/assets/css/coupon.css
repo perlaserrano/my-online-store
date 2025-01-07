@@ -1,0 +1,58 @@
+/* coupon.css */
+.coupon {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .coupon:hover {
+    transform: scale(1.05);
+  }
+  
+  .coupon h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    animation: pulse 2s infinite;
+  }
+  
+  .coupon p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .discount-code {
+    background-color: #ff6666;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  /* Keyframes for pulse effect on the title */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Keyframes for glowing effect on the discount code */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #ff6666;
+    }
+    100% {
+      box-shadow: 0 0 20px #ff6666, 0 0 30px #ff6666, 0 0 40px #ff6666;
+    }
+  }
+  

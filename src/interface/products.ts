@@ -1,4 +1,4 @@
-// src/helpers/products.ts
+
 
 export interface Product {
     id: number;
@@ -6,7 +6,7 @@ export interface Product {
     description: string;
     price: string;
     rating: number;
-    images: string[]; // Asumimos que es un array de rutas de imágenes
+    images: string[]; 
 }
 
 export const products: Product[] = [

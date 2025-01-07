@@ -1,6 +1,8 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import { Layout } from './Layout';
+import { Reviews } from './Reviews';
+import { Coupon } from './Coupon';
 import { Product, products } from '../interface/products';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
@@ -8,21 +10,22 @@ import "slick-carousel/slick/slick-theme.css";
 import '../assets/css/productDetails.css';
 
 
+
 interface ProductDetailsProps {
     products: Product[];
-  }
-  
-  export const ProductDetails: React.FC<ProductDetailsProps> = ({ products }) => {
+}
+
+export const ProductDetails: React.FC<ProductDetailsProps> = ({ products }) => {
     const { id } = useParams<{ id?: string }>();
-  
+
     if (!id || isNaN(Number(id))) return <div>Producto no encontrado</div>;
-  
+
     const productId = parseInt(id, 10);
-  
+
     const product = products.find(p => p.id === productId);
-  
+
     if (!product) return <div>Producto no encontrado</div>;
-  
+
     const settings = {
         dots: false,
         infinite: true,
@@ -30,17 +33,13 @@ interface ProductDetailsProps {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 3000, // Cambia la imagen cada 3 segundos
+        autoplaySpeed: 3000, 
     };
 
     return (
         <Layout>
             <div className="product-details">
-            <div className="coupon">
-            <h3>10% OFF</h3>
-            <p>En tu primera compra</p>
-            <div className="discount-code">Cupon! Toca Aqui</div>
-        </div>
+                <Coupon/>
                 <div className="product-carousel">
                     <Slider {...settings}>
                         {product.images.map((image, index) => (
@@ -57,8 +56,6 @@ interface ProductDetailsProps {
                         ))}
                     </div>
                 </div>
-                
-
                 <div className="product-info">
                     <h2>{product.name}</h2>
                     <p className="product-description">
@@ -74,12 +71,12 @@ interface ProductDetailsProps {
                     <p className="product-features">
                         <strong>Características:</strong>
                         <ul>
-                        <li>Disponible en varios tamaños y colores</li>
+                            <li>Disponible en varios tamaños y colores</li>
                             <li>Hecho de material de alta calidad</li>
                             <li>Perfecto para cualquier ocasión</li>
                             <li>Diseño elegante y moderno</li>
-                         
-                           
+
+
                         </ul>
                     </p>
                     <span className="product-price">{product.price}</span>
@@ -87,15 +84,8 @@ interface ProductDetailsProps {
                         Agregar al Carrito <i className="bi bi-cart3"></i>
                     </button>
                 </div>
-                
             </div>
-
-            <div className="reviews-section">
-                <h3>Reseñas</h3>
-                <div className="review-box">
-                    <p>Aún no hay reseñas. ¡Sé el primero en opinar!</p>
-                </div>
-            </div>
+            <Reviews/>
         </Layout>
     );
 };

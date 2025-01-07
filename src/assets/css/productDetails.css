@@ -1,114 +1,12 @@
-/* .product-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem; 
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-}
-
-.card-img-top {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
-.product-details-card {
-    display: flex;
-    flex-direction: row;
-    width: 80%;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin-bottom: 20px;
-}
-
-.product-image {
-    width: 150px;
-    height: auto;
-    object-fit: cover;
-    border-right: 1px solid #eee;
-}
-
-.product-info {
-    padding: 20px;
-    flex: 1;
-}
-
-.product-info h2 {
-    margin-bottom: 10px;
-    font-size: 1.5rem;
-}
-
-.product-info p {
-    margin-bottom: 10px;
-}
-
-.product-price {
-    font-size: 1.25rem;
-    color: #ff5722;
-    margin-bottom: 20px;
-}
-
-.add-to-cart-btn {
-    background-color: #ff5722;
-    border: none;
-    padding: 10px 20px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.add-to-cart-btn:hover {
-    background-color: #e64a19;
-}
-
-.reviews-section {
-    width: 80%;
-    margin-top: 20px;
-    background-color: #f9f9f9;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.reviews-section h3 {
-    margin-bottom: 15px;
-}
-
-.review-box {
-    background-color: #fff;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 5px;
-} */
 .product-details {
     display: flex;
     flex-wrap: wrap;
-    
     padding: 20px;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+   
 }
 
 .product-image {
@@ -126,12 +24,12 @@
 
 .product-info {
     flex: 1;
-    max-width: 400px; /* Reduce el max-width para hacer la sección más compacta */
+    max-width: 400px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0; /* Asegúrate de que no haya márgenes adicionales */
-    padding: 10px; /* Puedes agregar algo de padding si es necesario */
+    margin: 0; 
+    padding: 10px; 
 }
 
 .product-info h2 {
@@ -143,7 +41,7 @@
 .product-features,
 .product-price {
     font-size: 1rem;
-    margin-bottom: 10px; /* Reduce el margen inferior para compactar más */
+    margin-bottom: 10px; 
     color: #555;
     text-align: center;
 }
@@ -225,7 +123,7 @@
 
 .product-carousel {
     width: 100%;
-    max-width: 280px; /* Ajusta el ancho máximo si es necesario */
+    max-width: 280px; 
 }
 .coupon {
     display: flex;
@@ -242,8 +140,8 @@
     width: 150px;
     margin: 0;
     position: absolute;
-    top: 20px; /* Ajusta esta distancia según sea necesario */
-    right: 20px; /* Ajusta esta distancia según sea necesario */
+    top: 20px; 
+    right: 20px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 

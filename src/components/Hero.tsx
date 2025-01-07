@@ -15,7 +15,7 @@ export const Hero = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // Cambia la imagen cada 3 segundos
+    autoplaySpeed: 3000,
   };
 
   return (

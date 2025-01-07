@@ -8,35 +8,35 @@
   }
   
   .card {
-    width: 300px; /* O ajusta según tu diseño */
-    max-width: 100%; /* Asegura que la tarjeta no sea más ancha que el contenedor */
+    width: 300px; 
+    max-width: 100%; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
   
   .card-img-top {
     width: 100%;
-    height: 200px; /* Ajusta según el tamaño de la imagen */
+    height: 200px; 
     object-fit: cover;
   }
   
   .card:hover {
-    transform: scale(1.05); /* Escala la tarjeta ligeramente */
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Incrementa la sombra */
+    transform: scale(1.05); 
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); 
   }
   
   .add-to-cart-btn {
     padding: 8px 16px;
-    background-color: #ff5722; /* Color del botón */
+    background-color: #ff5722; 
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    text-decoration: none; 
     transition: background-color 0.3s ease;
   }
   
   .add-to-cart-btn:hover {
-    background-color: #e64a19; /* Color del botón al pasar el ratón */
+    background-color: #e64a19; 
   }
   

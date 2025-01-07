@@ -1,0 +1,13 @@
+/* assets/css/productsPage.css */
+.products-page-container {
+    display: flex;
+}
+
+.filter-sidebar {
+    width: 20%; /* Puedes ajustar este valor según el ancho que desees */
+}
+
+.product-list-container {
+    width: 80%; /* Ocupa el resto del espacio */
+    padding-left: 20px; /* Agrega algo de espacio entre el sidebar y la lista de productos */
+}
